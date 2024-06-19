@@ -1,12 +1,8 @@
 # roop-unleashed
 
-[Changelog](#changelog) • [Usage](#usage) • [Wiki](https://github.com/C0untFloyd/roop-unleashed/wiki)
+**This fork was created with the intention of providing free use for users. To access the original repository, visit [roop-unleashed on GitHub](https://github.com/C0untFloyd/roop-unleashed).**
 
-
-Uncensored Deepfakes for images and videos without training and an easy-to-use GUI.
-
-
-![Screen](https://github.com/C0untFloyd/roop-unleashed/assets/131583554/6ee6860d-efbe-4337-8c62-a67598863637)
+Uncensored Faceswaps for images and videos without training and an easy-to-use GUI.
 
 ### Features
 
@@ -24,38 +20,34 @@ Uncensored Deepfakes for images and videos without training and an easy-to-use G
 
 and lots more...
 
-
 ## Disclaimer
 
 This project is for technical and academic use only.
-Users of this software are expected to use this software responsibly while abiding the local law. If a face of a real person is being used, users are suggested to get consent from the concerned person and clearly mention that it is a deepfake when posting content online. Developers of this software will not be responsible for actions of end-users.
+Users of this software are expected to use this software responsibly while abiding by local law. If a face of a real person is being used, users are suggested to get consent from the concerned person and clearly mention that it is a deepfake when posting content online. Developers of this software will not be responsible for actions of end-users.
 **Please do not apply it to illegal and unethical scenarios.**
 
-In the event of violation of the legal and ethical requirements of the user's country or region, this code repository is exempt from liability
+In the event of a violation of the legal and ethical requirements of the user's country or region, this code repository is exempt from liability.
 
 ### Installation
 
 Please refer to the [wiki](https://github.com/C0untFloyd/roop-unleashed/wiki).
-
-
-
 
 ### Usage
 
 - Windows: run the `windows_run.bat` from the Installer.
 - Linux: `python run.py`
 
-<a target="_blank" href="https://colab.research.google.com/github/C0untFloyd/roop-unleashed/blob/main/roop-unleashed.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
-  
-
 Additional commandline arguments are currently unsupported and settings should be done via the UI.
 
 > Note: When you run this program for the first time, it will download some models roughly ~2Gb in size.
 
+### Update for Google Colab Users
 
+<a target="_blank" href="https://colab.research.google.com/drive/1PixFaQs_UD50HrQJheDF7100MD3N1GKd#scrollTo=r_s6t4OQgKms">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
+Users who do not have Colab Pro could not use the original Colab link without subscribing. Now, with this fork, you can easily use roop on Google Colab.
 
 ### Changelog
 
@@ -70,14 +62,12 @@ Additional commandline arguments are currently unsupported and settings should b
 - Face masking only runs when there is a face detected
 - Removed unnecessary toggle checkbox for text masking
 
-
 **22.03.2024** v3.6.5
 
 - Bugfix: Installer pulling latest update on first installation
 - Bugfix: Regression issue, blurring/erosion missing from face swap
 - Exposed erosion and blur amounts to UI
 - Using same values for manual masking too
-
 
 **20.03.2024** v3.6.3
 
@@ -86,7 +76,6 @@ Additional commandline arguments are currently unsupported and settings should b
 - Made face swapping mask offsets resolution independant
 - Show offset mask as overlay
 - Changed layout for masking
-
 
 **18.03.2024** v3.6.0
 
@@ -97,7 +86,6 @@ Additional commandline arguments are currently unsupported and settings should b
 - Removed unnecessary activate live-cam option
 - Added time info to preview frame and changed frame slider event to allow faster changes
 
-
 **10.03.2024** v3.5.5
 
 - Bugfix: Installer Path Env
@@ -107,50 +95,3 @@ Additional commandline arguments are currently unsupported and settings should b
 - Replaced restoreformer with restoreformer++
 - Live Cam recoded to run separate from virtual cam and without blocking controls
 - Swapping with only 1 target face allows selecting from several input faces
-
-
-
-**08.01.2024** v3.5.0
-
-- Bugfix: wrong access options when creating folders
-- New auto rotation of horizontal faces, fixing bad landmark positions (expanded on ![PR 364](https://github.com/C0untFloyd/roop-unleashed/pull/364))
-- Simple VR Option for stereo Images/Movies, best used in selected face mode
-- Added RestoreFormer Enhancer - https://github.com/wzhouxiff/RestoreFormer
-- Bumped up package versions for onnx/Torch etc.   
-
-
-**16.10.2023** v3.3.4
-
-**11.8.2023** v2.7.0
-
-Initial Gradio Version - old TkInter Version now deprecated
-
-- Re-added unified padding to face enhancers
-- Fixed DMDNet for all resolutions
-- Selecting target face now automatically switches swapping mode to selected
-- GPU providers are correctly set using the GUI (needs restart currently)
-- Local output folder can be opened from page
-- Unfinished extras functions disabled for now
-- Installer checks out specific commit, allowing to go back to first install
-- Updated readme for new gradio version
-- Updated Colab
-
-
-# Acknowledgements
-
-Lots of ideas, code or pre-trained models borrowed from the following projects:
-
-https://github.com/deepinsight/insightface<br />
-https://github.com/s0md3v/roop<br />
-https://github.com/AUTOMATIC1111/stable-diffusion-webui<br /> 
-https://github.com/Hillobar/Rope<br />
-https://github.com/TencentARC/GFPGAN<br />   
-https://github.com/kadirnar/codeformer-pip<br />
-https://github.com/csxmli2016/DMDNet<br />
-https://github.com/glucauze/sd-webui-faceswaplab<br />
-https://github.com/ykk648/face_power<br />
-
-<br />
-<br />
-Thanks to all developers!
-
